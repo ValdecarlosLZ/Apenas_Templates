@@ -1,0 +1,117 @@
+<style>
+
+
+  body{
+    display: flex;
+  }
+  
+    .cards {
+      margin: auto;
+    position: relative;
+  }
+  
+  .card {
+    z-index: 1;
+    position: absolute;
+    width: 254px;
+    height: 190px;
+    border-radius: 10px;
+    transition: all .5s ease-out;
+    overflow: hidden;
+    transform: translateX(0px) translateY(0px) perspective(905px) rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+  }
+  
+  .card.one {
+    top: -120px;
+    left: -150px;
+    background: linear-gradient(180deg, #ff0095 0%, #b104e6 50%, #a902ac 100%);
+  }
+  
+  .card.two {
+    top: -95px;
+    left: -125px;
+    background: linear-gradient(180deg, #a902ac 0%, #db1cd2 50%, #0a1388 99%);
+  }
+  
+  .card.three {
+    top: -70px;
+    left: -100px;
+    background: linear-gradient(180deg, #0a1388 0%, #6409f7 50%, #570470 100%);
+  }
+  
+  .card:hover {
+    z-index: 4;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) !important;
+    transition: all .5s ease-out;
+  }
+  
+  .cardDetails {
+    width: 55%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(20, 14, 20, 0.8);
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+  }
+  
+  .card:hover .cardDetails {
+    transform: perspective(2000px) rotateY(0deg);
+  }
+  
+  .cardDetailsHaeder {
+    font-weight: 600;
+    color: rgb(195, 0, 255);
+    font-family: Baskerville Old Face;
+      text-shadow: 3px 3px 7px rgb(178, 110, 192);
+      margin-right: 27%;
+      margin-top: 10%;
+  }
+  
+  .cardDetailsButton {
+    padding: 3px 6px;
+    border-radius: 25px;
+    background-color: #470672;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25%;
+    align-self: center;
+  }
+  .cardLogo{
+      margin: auto;
+  }
+  a{
+      text-decoration: none;
+      color: aliceblue;
+      font-family: Baskerville Old Face;
+  }
+  </style>
+  <div class="cards">
+      <div class="card one">
+          <div class="cardDetails">
+              <div class="cardDetailsHaeder">Lux Zero</div>
+              <div class="cardLogo"><img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png"  width="60"></div>
+              <div class="cardDetailsButton"><a href="#">Participar</a></div>
+          </div>
+      </div>
+      <div class="card two">
+          <div class="cardDetails">
+              <div class="cardDetailsHaeder">Lux Zero</div>
+              <div class="cardLogo"><img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png"  width="60"></div>
+              <div class="cardDetailsButton"><a href="#">Sobre nós</a></div>
+          </div>
+      </div>
+      <div class="card three">        
+          <div class="cardDetails">
+              <div class="cardDetailsHaeder">Lux Zero</div>
+              <div class="cardLogo"><img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png"  width="60"></div>
+              <div class="cardDetailsButton"><a href="#">Ir para o site</a></div>
+              
+          </div>
+   
+      </div>
+  </div>
